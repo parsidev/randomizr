@@ -1,0 +1,19 @@
+{
+    "name": "parsidev/randomizr",
+    "description": "Generate some random madness.",
+    "keywords": ["laravel", "randomizr", "random", "generator"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Parsidev\\Support\\" : "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "minimum-stability": "stable"
+}
