@@ -3,5 +3,5 @@
 use Illuminate\Support\Facades\Facade;
 
 class Randomizr extends Facade {
-    protected static function getFacadeAccessor() { return 'Parsidev\Support\Services\Randomizr'; }
+    protected static function getFacadeAccessor() { return 'randomizr'; }
 }
