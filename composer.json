@@ -3,17 +3,30 @@
     "description": "Generate some random madness.",
     "keywords": ["laravel", "randomizr", "random", "generator"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Reza",
+            "email": "info@parsidev.ir"
+        }
+    ],
     "require": {
         "php": ">=7.0.0",
         "illuminate/support": "5.5.*"
     },
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "Parsidev\\Support\\" : "src/"
-        },
-        "files": [
-            "src/Support/helpers.php"
-        ]
+        }
     },
-    "minimum-stability": "stable"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Parsidev\\Support\\Providers\\RandomizrServiceProvider"
+            ],
+            "aliases": {
+                "Randomizr": "Parsidev\\Support\\Facades\\Randomizr"
+            }
+        }
+    },
+    "minimum-stability": "dev"
 }
