@@ -14,9 +14,11 @@
         "illuminate/support": "5.5.*"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "Parsidev\\Support\\" : "src/"
-        }
+        }"files": [
+            "src/Support/helpers.php"
+        ]
     },
     "extra": {
         "laravel": {
