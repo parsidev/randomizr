@@ -16,7 +16,8 @@
     "autoload": {
         "psr-4": {
             "Parsidev\\Support\\" : "src/"
-        }"files": [
+        },
+        "files": [
             "src/Support/helpers.php"
         ]
     },
