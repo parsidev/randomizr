@@ -97,7 +97,7 @@
          */
         protected function resolveRequestedCharset( $requested )
         {
-            $charsets = explode('_', Str::snake($requested));
+            $charsets = explode('_', \Illuminate\Support\Str::snake($requested));
             
             foreach ( $charsets as $name )
             {
