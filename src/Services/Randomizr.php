@@ -97,7 +97,7 @@
          */
         protected function resolveRequestedCharset( $requested )
         {
-            $charsets = explode('_', snake_case($requested));
+            $charsets = explode('_', Str::snake($requested));
             
             foreach ( $charsets as $name )
             {
